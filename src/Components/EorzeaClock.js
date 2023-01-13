@@ -1,5 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+import UpdateTime from "../Controllers/UpdateTime";
 
-const EorzeaClock = ()=> {
-  
+function EorzeaClock() {
+  const {shouldRerender, setShouldRerender} = useState(false);
+  const currentEorzeaTime = UpdateTime()
+
+  setState(shouldRerender=true)
+  return (
+    <div>
+      <h1>{currentEorzeaTime}</h1>
+    </div>
+  )
 }
+
+export default EorzeaClock;
