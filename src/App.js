@@ -27,11 +27,12 @@ export default function() {
   return (
     <Router>
       <Routes>
+        <Route exact path="/" element={<App />} />
         <Route exact path="/botany" element={<Botany />} />
       </Routes>
-      <App />
     </Router>
   );
 }
+//<App />
 //<Route exact path="/" element={<App />} />
 // {/* <Route exact path="/eorzea-timers-react" element={<App />} /> */}
