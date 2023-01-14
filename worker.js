@@ -1,7 +1,9 @@
+/* eslint-disable no-restricted-globals */
 
 var CACHE_NAME = 'pwa-task-manager';
 var urlsToCache = [
-  '/'
+  "/",
+  "/botany"
 ];
 
 // Install a service worker

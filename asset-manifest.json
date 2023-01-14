@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/eorzea-timers-react/static/css/main.5254a911.css",
-    "main.js": "/eorzea-timers-react/static/js/main.df17842e.js",
+    "main.js": "/eorzea-timers-react/static/js/main.32315db9.js",
     "static/js/787.38916de6.chunk.js": "/eorzea-timers-react/static/js/787.38916de6.chunk.js",
     "service-worker.js": "/eorzea-timers-react/service-worker.js",
     "index.html": "/eorzea-timers-react/index.html",
     "main.5254a911.css.map": "/eorzea-timers-react/static/css/main.5254a911.css.map",
-    "main.df17842e.js.map": "/eorzea-timers-react/static/js/main.df17842e.js.map",
+    "main.32315db9.js.map": "/eorzea-timers-react/static/js/main.32315db9.js.map",
     "787.38916de6.chunk.js.map": "/eorzea-timers-react/static/js/787.38916de6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5254a911.css",
-    "static/js/main.df17842e.js"
+    "static/js/main.32315db9.js"
   ]
 }
