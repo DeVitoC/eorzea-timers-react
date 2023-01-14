@@ -1,12 +1,17 @@
 const UpdateTime = ()=> {
   // const eorzeaMultiplier = 3600/175;
 
-  const { hour, minute, second } = getEorzeaHourAndMinute();
-  let date = new Date();
-  date.setHours(hour, minute, second);
-  // let time = date.toLocaleTimeString('en-US', { hour12: true });
-  let time = `${hour <= 12 ? hour : (hour - 12)}:${minute > 9 ? minute : "0" + minute} ${hour < 12 ? "AM" : "PM"}`
-  console.log(time);
+  const { hour, minute } = getEorzeaHourAndMinute();
+  let newHour;
+  if (hour === 0) {
+    newHour = 12;
+  } else if (hour < 13) {
+    newHour = hour;
+  } else {
+    newHour = hour - 12;
+  }
+
+  let time = `${ newHour }:${ minute > 9 ? minute : "0" + minute } ${ hour < 12 ? "AM" : "PM" }`;
   return time;
 }
 

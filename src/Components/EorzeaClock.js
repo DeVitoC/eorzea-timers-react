@@ -11,13 +11,13 @@ function EorzeaClock() {
       return () => clearInterval(intervalId);
   }, []);
 
-  const currentEorzeaTime = UpdateTime()
+  const currentEorzeaTime = UpdateTime();
 
   return (
     <div>
       <h1>{currentEorzeaTime}</h1>
     </div>
-  )
+  );
 }
 
 export default EorzeaClock;
