@@ -1,6 +1,4 @@
 const UpdateTime = ()=> {
-  // const eorzeaMultiplier = 3600/175;
-
   const { hour, minute } = getEorzeaHourAndMinute();
   let newHour;
   if (hour === 0) {

@@ -33,6 +33,3 @@ export default function() {
     </Router>
   );
 }
-//<App />
-//<Route exact path="/" element={<App />} />
-// {/* <Route exact path="/eorzea-timers-react" element={<App />} /> */}
