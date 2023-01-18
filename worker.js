@@ -1,5 +1,8 @@
 /* eslint-disable no-restricted-globals */
 
+const divInstall = document.getElementById('installContainer');
+const butInstall = document.getElementById('butInstall');
+
 var CACHE_NAME = 'pwa-task-manager';
 var urlsToCache = [
   "/",
