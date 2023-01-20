@@ -23,6 +23,6 @@
   align-items: flex-end;
 }
 
-.child {
-  /* other styles */
+h1 {
+  color: #fff;
 }
