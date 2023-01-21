@@ -1,12 +1,12 @@
 import React from "react";
 
-function Botany() {
+function NodeSelectionView({ profession }) {
   return (
     <div className="tc">
-      <h1>Botany</h1>
+      <h1>{profession}</h1>
       <p>This is the Botany page.</p>
     </div>
   );
 }
 
-export default Botany;
+export default NodeSelectionView;

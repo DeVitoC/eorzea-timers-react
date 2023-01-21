@@ -1,17 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './Containers/App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
+import NodeSelectionView from "./Components/Botany";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<App />} />
+        <Route exact path="/eorzea-timers-react" element={<App />} />
+        <Route exact path="/botany" element={<NodeSelectionView profession="Botany"/>} />
+        <Route exact path="/fishing" element={<NodeSelectionView profession="Fishing" />} />
+        <Route exact path="/mining" element={<NodeSelectionView profession="Mining" />} />
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
+// <App />
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
