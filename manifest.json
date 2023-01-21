@@ -4,18 +4,39 @@
   "description": "Information about gathering professions in FF XIV",
   "icons": [
     {
-      "src": "eorzeaTimersIco.png",
-      "sizes": "144x144 64x64 32x32 24x24 16x16",
-      "type": "image/png"
-    },
-    {
-      "src": "eorzeaTimers1024",
-      "sizes": "1024x1024 512x512",
+      "src": "eorzeaTimers1024.png",
+      "sizes": "1024x1024",
       "type": "image/png",
       "purpose": "maskable"
-    }
+    },
+    {
+      "src": "eorzeaTimers512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "eorzeaTimers144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+  },
+  {
+    "src": "eorzeaTimers92.png",
+    "sizes": "92x92",
+    "type": "image/png"
+},
+{
+  "src": "eorzeaTimers64.png",
+  "sizes": "64x64",
+  "type": "image/png"
+},
+{
+  "src": "eorzeaTimers32.png",
+  "sizes": "32x32",
+  "type": "image/png"
+}
   ],
-  "start_url": "./",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",

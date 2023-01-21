@@ -3,7 +3,10 @@
 var CACHE_NAME = 'pwa-task-manager';
 var urlsToCache = [
   "/",
-  "/botany"
+  "/botany",
+  "/mining",
+  "/fishing",
+  "/eorzea-timers-react"
 ];
 
 // Install a service worker
