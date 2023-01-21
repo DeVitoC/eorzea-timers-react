@@ -2,11 +2,11 @@
 <html lang="en" class="bg-near-black">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/eorzeaTimersIco.png" />
+    <link rel="icon" href="%PUBLIC_URL%/eorzeaTimers144.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="ffffff#" />
+    <meta name="theme-color" content="#ffffff" />
     <meta name="description" content="Created by Christopher DeVito" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/eorzeaTimersIco.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/eorzeaTimers144.png" />
     <link rel="stylesheet" href="/style.css">
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -30,7 +30,7 @@
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
-          navigator.serviceWorker.register('/worker.js').then(function(registration) {
+          navigator.serviceWorker.register('./worker.js').then(function(registration) {
             console.log('Worker registration successful', registration.scope);
           }, function(err) {
             console.log('Worker registration failed', err);

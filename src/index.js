@@ -5,11 +5,14 @@ import App from './Containers/App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
-import NodeSelectionView from "./Components/Botany";
+import NodeSelectionView from "./Components/NodeSelectionView";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+library.add(faArrowLeft);
+
 root.render(
   <React.StrictMode>
     <Router>
