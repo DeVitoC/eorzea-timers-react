@@ -19,9 +19,9 @@ root.render(
       <Routes>
         <Route exact path="/" element={<App />} />
         <Route exact path="/eorzea-timers-react" element={<App />} />
-        <Route exact path="/botany" element={<NodeSelectionView profession="Botany"/>} />
-        <Route exact path="/fishing" element={<NodeSelectionView profession="Fishing" />} />
-        <Route exact path="/mining" element={<NodeSelectionView profession="Mining" />} />
+        <Route exact path="/eorzea-timers-react/botany" element={<NodeSelectionView profession="Botany"/>} />
+        <Route exact path="/eorzea-timers-react/fishing" element={<NodeSelectionView profession="Fishing" />} />
+        <Route exact path="/eorzea-timers-react/mining" element={<NodeSelectionView profession="Mining" />} />
       </Routes>
     </Router>
   </React.StrictMode>
