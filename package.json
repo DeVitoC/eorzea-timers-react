@@ -1,7 +1,7 @@
 {
   "name": "eorzea-timers-react",
   "version": "0.1.0",
-  "homepage": "https://devitoc.github.io/eorzea-timers-react",
+  "homepage": "https://devitoc.github.io/eorzea-timers-react/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
