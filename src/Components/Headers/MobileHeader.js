@@ -12,4 +12,3 @@ export default function MobileHeader() {
     </div>
   );
 }
-//<EorzeaClock className="dib" labelType="p" />

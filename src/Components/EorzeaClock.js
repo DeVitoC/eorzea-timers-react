@@ -16,7 +16,7 @@ function EorzeaClock({ labelType }) {
   if (labelType === "h1") {
     return <h1 className="white">{currentEorzeaTime}</h1>;
   } else if (labelType === "p") {
-    return <p className="white">{currentEorzeaTime}</p>;
+    return <p className="white mt0">{currentEorzeaTime}</p>;
   }
 }
 
