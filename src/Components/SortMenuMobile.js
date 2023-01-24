@@ -3,9 +3,9 @@ import SegmentedControl from "./SegmentedControl";
 
 export default function SortMenuMobile() {
   return (
-    <div>
+    <div className="mt0">
       <div className="flex ml3">
-        <p className="white">Expac: </p>
+        <p className="white mr1">Expac: </p>
         <SegmentedControl 
           name="expac selections"
           callback={(val) => console.log(val)}
@@ -45,8 +45,31 @@ export default function SortMenuMobile() {
           ]}
         />
       </div>
-      <div>
-        <p>Sort By: </p>
+      <div className="flex ml3">
+        <p className="white mr1">Sort by: </p>
+        <SegmentedControl 
+          name="sort selections"
+          callback={(val) => console.log(val)}
+          defaultIndex={0}
+          controlRef={ useRef() }
+          segments={[
+            {
+              label: "Name",
+              value: "name",
+              ref: useRef()
+            },
+            {
+              label: "Time",
+              value: "time",
+              ref: useRef()
+            },
+            {
+              label: "Zone",
+              value: "zone",
+              ref: useRef()
+            },
+          ]}
+        />
       </div>
     </div>
   )
