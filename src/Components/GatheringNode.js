@@ -14,9 +14,9 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const storage = getStorage(app)
 const goldOreRef = ref(storage, "GoldOre.jpg");
-const goldOreURL = getDownloadURL(goldOreRef).then((url) => {
-  return url;
-});
+// const goldOreURL = getDownloadURL(goldOreRef).then((url) => {
+//   return url;
+// });
 
 export default function GatheringNode({ 
   name, 
@@ -42,6 +42,12 @@ export default function GatheringNode({
     // storage.child(`${imageName}.jpg`).getDownloadURL().then((url) => {
     //   setImageState(url)
     // });
+    getDownloadURL(goldOreRef).then((url) => {
+      setImageState(url);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
     
   };
 
