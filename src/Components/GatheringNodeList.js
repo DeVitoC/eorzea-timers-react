@@ -1,13 +1,14 @@
 import React from "react";
 import GatheringNode from "./GatheringNode";
 
-export default function NodeList({ nodes }) {
+export default function GatheringNodeList({ nodes }) {
   return (
     <div>
       {
         nodes.map((node, i) => {
           return (
             <GatheringNode 
+              key={i}
               name={node.name}
               time={node.time}
               location={node.location}
