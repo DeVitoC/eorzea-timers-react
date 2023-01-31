@@ -7,7 +7,7 @@ export default function GatheringNodeList({ nodes }) {
       {
         nodes.map((node, i) => {
           return (
-            <GatheringNode 
+            <GatheringNode className="w-100"
               key={i}
               name={node.name}
               time={node.time}

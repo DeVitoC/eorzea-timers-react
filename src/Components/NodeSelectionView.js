@@ -5,24 +5,6 @@ import MobileHeader from "./Headers/MobileHeader";
 import NodeScrollList from "./NodeScrollList";
 import SearchBar from "./SearchBar";
 import SortMenuMobile from "./SortMenuMobile";
-// import { initializeApp } from 'firebase/app';
-// import { getStorage, ref, getDownloadURL } from 'firebase/storage';
-
-// const firebaseConfig = {
-//   apiKey: "AIzaSyAPYSgNJDOe2BPNTjlEcYiz6kzI82sG1WE",
-//   authDomain: "timersimages.firebaseapp.com",
-//   projectId: "timersimages",
-//   storageBucket: "timersimages.appspot.com",
-//   messagingSenderId: "715020355745",
-//   appId: "1:715020355745:web:d8af2080ce5d5b404d88e0"
-// };
-
-// const app = initializeApp(firebaseConfig);
-// const storage = getStorage(app)
-// // const goldOreRef = ref(storage, "GoldOre.jpg");
-// const goldOreURL = getDownloadURL(ref(storage, "GoldOre.jpg")).then((url) => {
-//   return url;
-// });
 
 function NodeSelectionView({ profession }) {
   const [searchField, setSearchField] = useState("")
@@ -49,12 +31,12 @@ function NodeSelectionView({ profession }) {
   ]
 
   return (
-    <div className="tc">
+    <div className="tc w-100">
       <MobileHeader />
       <EorzeaClock labelType="p" />
       <SortMenuMobile />
       <SearchBar searchChange={ onSearchChange } />
-      <NodeScrollList>
+      <NodeScrollList className="w-100">
         <GatheringNodeList nodes={ nodeList } />
       </NodeScrollList>
     </div>
